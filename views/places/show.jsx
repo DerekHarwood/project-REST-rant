@@ -2,10 +2,10 @@ const React = require("react");
 const Def = require("../default");
 
 function show(data) {
-  let comments = <h3 className="inactive">No comments yet!</h3>;
-  let rating = <h3 className="inactive">Not yet rated</h3>;
-  rating = <h3></h3>;
-  comments = <h3></h3>;
+  let comments = <h2 className="inactive">Comments</h2>;
+  let rating = <h2 className="inactive">Rating</h2>;
+  rating = <h3>No comments yet!</h3>;
+  comments = <h3>Not yet rated</h3>;
   return (
     <Def>
       <main>
