@@ -55,19 +55,3 @@ function new_form(data) {
 }
 
 module.exports = new_form;
-function new_form(data) {
-  let message = "";
-  if (data.message) {
-    message = <h4 className="alert-danger">{data.message}</h4>;
-  }
-  return (
-    <Def>
-      <main>
-        <h1>Add a New Place</h1>
-        {message}
-      </main>
-    </Def>
-  );
-}
-
-module.exports = new_form;
