@@ -2,10 +2,15 @@ const React = require("react");
 const Def = require("../default");
 
 function new_form(data) {
+  let message = "";
+  if (data.message) {
+    message = <h4 className="alert-danger">{data.message}</h4>;
+  }
   return (
     <Def>
       <main>
         <h1>Add a New Place</h1>
+        {message}
         <form method="POST" action="/places">
           <div className="form-group col-sm-4">
             <label htmlFor="name">Place Name</label>
@@ -44,6 +49,22 @@ function new_form(data) {
           </div>
           <input className="btn btn-primary" type="submit" value="Add Place" />
         </form>
+      </main>
+    </Def>
+  );
+}
+
+module.exports = new_form;
+function new_form(data) {
+  let message = "";
+  if (data.message) {
+    message = <h4 className="alert-danger">{data.message}</h4>;
+  }
+  return (
+    <Def>
+      <main>
+        <h1>Add a New Place</h1>
+        {message}
       </main>
     </Def>
   );
