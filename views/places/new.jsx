@@ -21,6 +21,14 @@ function new_form(data) {
             <input className="form-control" id="pic" name="pic" />
           </div>
           <div className="form-group col-sm-4">
+            <label htmlFor="city">City</label>
+            <input className="form-control" id="city" name="city" />
+          </div>
+          <div className="form-group col-sm-4">
+            <label htmlFor="state">State</label>
+            <input className="form-control" id="state" name="state" />
+          </div>
+          <div className="form-group col-sm-4">
             <label htmlFor="founded">Founded Year</label>
             <input
               type="number"
@@ -29,14 +37,6 @@ function new_form(data) {
               name="founded"
               value={new Date().getFullYear()}
             />
-          </div>
-          <div className="form-group col-sm-4">
-            <label htmlFor="city">City</label>
-            <input className="form-control" id="city" name="city" />
-          </div>
-          <div className="form-group col-sm-4">
-            <label htmlFor="state">State</label>
-            <input className="form-control" id="state" name="state" />
           </div>
           <div className="form-group col-sm-4">
             <label htmlFor="cuisines">Cuisines</label>
